@@ -1,26 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Introduction to Big data</title>
-   
-    <!-- Include Bootstrap CSS file -->
-    <link rel="stylesheet" href="https://maxcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Include jQuery file -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  </head>
-  <body>
-    <!-- Include a container div to wrap the whole HTML structure -->
-    <div id="container">
-      <!-- Main section: introduction and bio information -->
-      <h1>Introduction to Big data</h1>
-      <p>I am a data scientist, big data engineer, and programmer. I help process and analyze large amounts of data for businesses and organizations. I can help identify patterns, trends, and insights in data for decision-making.</p>
-      <p>Feel free to contact me for data analysis or programming services.</p>
-    </div>
-    <!-- Include feedback form here -->
-    <div class="form-group">
-      <!-- Include a form field to collect email address -->
-      <label for="email">Email</label>
-      <input type="email" id="email">
-    </div>
-  </body>
+<head>
+	<title>Introduction - Data Scientist, Big Data Engineer, and Programmer</title>
+	<style>
+		body {
+			background-color: black;
+			color: white;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-top: 50px;
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 24px;
+			margin-top: 30px;
+		}
+
+		p {
+			margin-top: 20px;
+		}
+
+		form {
+			margin-top: 50px;
+			text-align: center;
+		}
+
+		input[type=text], textarea {
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			margin-top: 10px;
+			width: 100%;
+		}
+
+		input[type=submit] {
+			background-color: white;
+			border: none;
+			border-radius: 5px;
+			color: black;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 20px;
+			padding: 10px;
+			width: 200px;
+		}
+
+		input[type=submit]:hover {
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<h1>Introduction - Data Scientist, Big Data Engineer, and Programmer</h1>
+	<h2>About Me</h2>
+	<p>Hi, my name is [Your Name] and I am a data scientist, big data engineer, and programmer. I have [Number of Years] years of experience in the field and have worked on a variety of projects ranging from [Project 1] to [Project 2]. My expertise includes [Skill 1], [Skill 2], and [Skill 3]. I am passionate about using data to solve complex problems and am always looking for new challenges.</p>
+	<h2>Contact Me</h2>
+	<p>If you would like to get in touch with me, please fill out the form below:</p>
+	<form>
+		<label for="name">Name:</label><br>
+		<input type="text" id="name" name="name" required><br>
+		<label for="email">Email:</label><br>
+		<input type="text" id="email" name="email" required><br>
+		<label for="message">Message:</label><br>
+		<textarea id="message" name="message" rows="5" required></textarea><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
 </html>
