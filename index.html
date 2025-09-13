@@ -1,120 +1,191 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7V303S5LE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZHANG Fuhai (Mike) — Resume</title>
+  <meta name="description" content="Results-driven IT Director with global leadership experience in retail. Expert in IT strategy, data & analytics, SAP, cybersecurity, and large-scale system integration." />
+  <meta name="author" content="ZHANG Fuhai (Mike)" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0f1220;
+      --card: #151a2e;
+      --muted: #8a93b2;
+      --text: #e6e9f5;
+      --accent: #6ea8fe;
+      --accent-2: #9bffd6;
+      --chip: #222846;
+      --border: #2a3158;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      --maxw: 1100px;
+    }
+    @media (prefers-color-scheme: light) {
+      :root{
+        --bg: #f7f8fc;
+        --card: #ffffff;
+        --muted: #5b647a;
+        --text: #0f1321;
+        --accent: #0d6efd;
+        --accent-2: #0fa;
+        --chip: #f2f5ff;
+        --border: #e6e9f5;
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--bg) 0%, #0b0e19 120%);color:var(--text);}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--maxw); margin: 48px auto; padding: 0 20px;}
+    header.hero{
+      display:grid; gap:22px; grid-template-columns: 1fr;
+      background:linear-gradient(135deg, rgba(110,168,254,.12), rgba(155,255,214,.12));
+      border:1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow:var(--shadow);
+    }
+    .name{font-size: clamp(28px, 5vw, 44px); font-weight: 800; line-height:1.05; letter-spacing:-.02em}
+    .title{font-size: clamp(14px, 2.4vw, 18px); color:var(--muted); font-weight:600}
+    .contact{display:flex; flex-wrap:wrap; gap:14px; align-items:center; color:var(--muted)}
+    .contact a{display:inline-flex; gap:8px; align-items:center; background:var(--chip); border:1px solid var(--border); padding:8px 12px; border-radius:999px; text-decoration:none}
+    .contact a:hover{transform:translateY(-1px); transition: .15s ease; text-decoration:none}
+    .grid{display:grid; gap:22px; grid-template-columns:1fr; margin-top: 26px}
+    @media(min-width: 880px){ .grid{ grid-template-columns: 2fr 1fr; } }
+    section.card{background: var(--card); border:1px solid var(--border); border-radius: var(--radius); padding: 22px; box-shadow:var(--shadow)}
+    h2{margin:0 0 10px 0; font-size: 20px; letter-spacing:.02em}
+    p{margin:0 0 10px 0; line-height:1.7}
+    .muted{color:var(--muted)}
+    ul{margin: 10px 0 0 18px}
+    li{margin:6px 0}
+    .role{display:grid; gap:6px; padding:14px; border-radius:12px; border:1px dashed var(--border); background:linear-gradient(180deg, transparent, rgba(255,255,255,.02));}
+    .role + .role{margin-top:12px}
+    .role h3{margin:0; font-size: 17px}
+    .role .meta{color:var(--muted); font-size: 14px}
+    .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px}
+    .chip{background:var(--chip); border:1px solid var(--border); padding:8px 10px; border-radius: 999px; font-size:13px; font-weight:600; color:var(--muted)}
+    footer{margin:28px 0 50px; color:var(--muted); display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:center}
+    .nav{display:flex; gap:12px; flex-wrap:wrap; margin-top: 4px}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:10px; border:1px solid var(--border); background:var(--chip); text-decoration:none; font-weight:600}
+    .btn:hover{transform:translateY(-1px)}
+    /* Print styles */
+    @media print {
+      body{background:white}
+      .wrap{margin:0}
+      header.hero, section.card{box-shadow:none}
+      a{text-decoration:none}
+      .btn, .nav{display:none}
+    }
+  </style>
 
-  gtag('config', 'G-B7V303S5LE');
-</script>
-	
-	<title>Introduction - Data Scientist, Big Data Engineer, and Programmer</title>
-	<style>
-		body {
-			background-color: black;
-			color: white;
-			font-family: Arial, sans-serif;
-			font-size: 16px;
-			line-height: 1.5;
-			margin: 0;
-			padding: 0;
-		}
-
-		h1 {
-			font-size: 36px;
-			margin-top: 50px;
-			text-align: center;
-		}
-
-		h2 {
-			font-size: 24px;
-			margin-top: 30px;
-		}
-
-		p {
-			margin-top: 20px;
-		}
-
-		form {
-			margin-top: 50px;
-			text-align: center;
-		}
-
-		input[type=text], textarea {
-			border: none;
-			border-radius: 5px;
-			padding: 10px;
-			margin-top: 10px;
-			width: 100%;
-		}
-
-		input[type=submit] {
-			background-color: white;
-			border: none;
-			border-radius: 5px;
-			color: black;
-			cursor: pointer;
-			font-size: 16px;
-			margin-top: 20px;
-			padding: 10px;
-			width: 200px;
-		}
-
-		input[type=submit]:hover {
-			background-color: #ccc;
-		}
-	</style>
+  <!-- Structured data for better SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "ZHANG Fuhai (Mike)",
+    "jobTitle": "IT Director",
+    "telephone": "+6593629457",
+    "email": "mailto:fuhai_zhang@yahoo.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Singapore"
+    },
+    "knowsAbout": [
+      "IT Strategy & Planning", "Data Analytics & Governance", "SAP Systems",
+      "Team Leadership", "Cybersecurity", "System Integration", "Agile Project Management"
+    ]
+  }
+  </script>
 </head>
 <body>
-	
-	<h1>The web site content is mainly generated by GPT-3, for testing Google Analytics Purpose, you are welcome to stay or click below button leave this site.</h1>
-	<form>
- <input type="button" value="Go back!" onclick="history.back()">
-</form>
-	<h2>Go to another page <a href="/websites.html">Click here</a></h2>
-	<h2>Go to web tag page <a href="/webtag.html">Click here</a></h2>
-	
-	<h1>Introduction - Data Scientist, Big Data Engineer, and Programmer</h1>
-	<h2>About Me</h2>
-	<p>Hi, my name is Mike and I am a data scientist, big data engineer, and programmer. I have 10 years of experience in the field and have worked on 
-		a variety of projects ranging from customer analytics to production prediction. My expertise includes 
-		applications, data engineering and data science. I am passionate about using data to solve complex problems and am always looking for new challenges.</p>
-	<h2>Contact Me, click <a href='https://www.zaobao.com.sg'>Zao Bao</a> or go shopping <a href='https://www.charleskeith.com/sg'>Charles & Keith</a></h2>
-	<p>If you would like to get in touch with me, please fill out the form below:</p>
-	<form>
-		<label for="name">Name:</label><br>
-		<input type="text" id="name" name="name" required><br>
-		<label for="email">Email:</label><br>
-		<input type="text" id="email" name="email" required><br>
-		<label for="message">Message:</label><br>
-		<textarea id="message" name="message" rows="5" required></textarea><br>
-		<input type="submit" value="Submit">
-	</form>
-	<p>
-		Data science is an interdisciplinary academic field [1] that uses statistics, scientific computing, scientific methods, processes, algorithms and systems to extract or extrapolate knowledge and insights from noisy, structured, and unstructured data.[2]
+  <div class="wrap">
+    <header class="hero" role="banner">
+      <div>
+        <div class="name">ZHANG Fuhai (Mike)</div>
+        <div class="title">Results-driven IT Director — global fashion retail, data & platforms</div>
+        <div class="nav">
+          <a class="btn" href="#experience">Experience</a>
+          <a class="btn" href="#skills">Skills</a>
+          <a class="btn" href="#education">Education</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="contact" id="contact" aria-label="Contact">
+        <a href="tel:+6593629457" aria-label="Phone"><span>📞</span><span>+65 9362 9457</span></a>
+        <a href="mailto:fuhai_zhang@yahoo.com" aria-label="Email"><span>✉️</span><span>fuhai_zhang@yahoo.com</span></a>
+      </div>
+      <p class="muted" style="margin:0">
+        Results-driven IT Director seeking to leverage experience directing IT infrastructure to reduce costs and data processing times.
+        Experienced in leading global teams, driving revenue growth, and aligning IT and data strategies with business objectives.
+      </p>
+    </header>
 
-Data science also integrates domain knowledge from the underlying application domain (e.g., natural sciences, information technology, and medicine).[3] Data science is multifaceted and can be described as a science, a research paradigm, a research method, a discipline, a workflow, and a profession.[4]
+    <div class="grid" role="main">
+      <section id="experience" class="card" aria-labelledby="exp-h2">
+        <h2 id="exp-h2">Experience</h2>
 
-Data science is a "concept to unify statistics, data analysis, informatics, and their related methods" to "understand and analyze actual phenomena" with data.[5] It uses techniques and theories drawn from many fields within the context of mathematics, statistics, computer science, information science, and domain knowledge.[6] However, data science is different from computer science and information science. Turing Award winner Jim Gray imagined data science as a "fourth paradigm" of science (empirical, theoretical, computational, and now data-driven) and asserted that "everything about science is changing because of the impact of information technology" and the data deluge.[7][8]
+        <article class="role">
+          <h3>Associate IT Director — Charles &amp; Keith Group</h3>
+          <div class="meta">Nov 2018 – Present • Singapore</div>
+          <ul>
+            <li>Led a 70-member team across global markets, aligning IT/Data with business goals.</li>
+            <li>Developed and executed IT strategy; improved system uptime by <strong>30%</strong> via governance and infra upgrades.</li>
+            <li>Spearheaded data analytics to reduce inventory discrepancies by <strong>15%</strong> and improve sales forecasting accuracy by <strong>20%</strong>.</li>
+            <li>Directed group-wide ERP, POS, CRM, RFID, PLM, and CDP rollouts.</li>
+          </ul>
+        </article>
 
-A data scientist is a professional who creates programming code and combines it with statistical knowledge to create insights from data.
-	</p>
-	<p>
-		Data science and data analysis are both important disciplines in the field of data management and analysis, but they differ in several key ways. While both fields involve working with data, data science is a more interdisciplinary field that involves the application of statistical, computational, and machine learning methods to extract insights from data and make predictions, while data analysis is more focused on the examination and interpretation of data to identify patterns and trends.[38][39]
+        <article class="role">
+          <h3>Senior Manager — NTUC FairPrice Co-operative Limited</h3>
+          <div class="meta">May 2016 – Nov 2018 • Singapore</div>
+          <ul>
+            <li>Managed migration to SAP S/4HANA, improving financial process efficiency by <strong>40%</strong>.</li>
+            <li>Integrated POS, WMS, and OMS across 200+ retail outlets.</li>
+            <li>Launched a Purchase Order mobile app for streamlined supplier transactions and order tracking.</li>
+            <li>Built cross-functional teams; delivered projects on time and within budget with a <strong>95% success rate</strong>.</li>
+          </ul>
+        </article>
 
-Data analysis typically involves working with smaller, structured datasets to answer specific questions or solve specific problems. This can involve tasks such as data cleaning, data visualization, and exploratory data analysis to gain insights into the data and develop hypotheses about relationships between variables. Data analysts typically use statistical methods to test these hypotheses and draw conclusions from the data. For example, a data analyst might analyze sales data to identify trends in customer behavior and make recommendations for marketing strategies.[38]
+        <article class="role">
+          <h3>Senior Manager / Founder — PEA IT Solutions Pte Ltd</h3>
+          <div class="meta">Jan 2006 – Apr 2016 • Singapore</div>
+          <ul>
+            <li>Founded and led an IT consultancy delivering logistics &amp; supply chain software solutions.</li>
+            <li>Designed and implemented warehouse management systems, improving client order processing by <strong>50%</strong>.</li>
+            <li>Delivered major projects for CEVA Logistics, Ryder Ascent Logistics, PCH International, and the German Distribution Centre.</li>
+            <li>Built inventory management systems for clients including Novartis, Lazada, and Shopify, enabling real-time tracking and scaling.</li>
+            <li>Partnered with 20+ clients to deliver customized IT solutions on time and within budget.</li>
+          </ul>
+        </article>
+      </section>
 
-Data science, on the other hand, is a more complex and iterative process that involves working with larger, more complex datasets that often require advanced computational and statistical methods to analyze. Data scientists often work with unstructured data such as text or images and use machine learning algorithms to build predictive models and make data-driven decisions. In addition to statistical analysis, data science often involves tasks such as data preprocessing, feature engineering, and model selection. For instance, a data scientist might develop a recommendation system for an e-commerce platform by analyzing user behavior patterns and using machine learning algorithms to predict user preferences.[39][40]
+      <aside class="card" id="skills" aria-labelledby="skills-h2">
+        <h2 id="skills-h2">Key Skills</h2>
+        <div class="chips" aria-label="Skills list">
+          <span class="chip">IT Strategy &amp; Planning</span>
+          <span class="chip">Data Analytics &amp; Governance</span>
+          <span class="chip">SAP Systems</span>
+          <span class="chip">Team Leadership</span>
+          <span class="chip">Cybersecurity</span>
+          <span class="chip">System Integration</span>
+          <span class="chip">Agile Project Management</span>
+        </div>
+      </aside>
 
-While data analysis focuses on extracting insights from existing data, data science goes beyond that by incorporating the development and implementation of predictive models to make informed decisions. Data scientists are often responsible for collecting and cleaning data, selecting appropriate analytical techniques, and deploying models in real-world scenarios. They work at the intersection of mathematics, computer science, and domain expertise to solve complex problems and uncover hidden patterns in large datasets.[39]
+      <section class="card" id="education" aria-labelledby="edu-h2" style="grid-column:1/-1">
+        <h2 id="edu-h2">Education</h2>
+        <ul>
+          <li><strong>Master of Science in Computer Science</strong> — National Technological University</li>
+          <li><strong>Bachelor of Computing in Computer Science</strong> — National University of Singapore</li>
+        </ul>
+      </section>
+    </div>
 
-Despite these differences, data science and data analysis are closely related fields and often require similar skill sets. Both fields require a solid foundation in statistics, programming, and data visualization, as well as the ability to communicate findings effectively to both technical and non-technical audiences. Moreover, both fields benefit from critical thinking and domain knowledge, as understanding the context and nuances of the data is essential for accurate analysis and modeling.[38][39]
-
-In summary, data analysis and data science are distinct yet interconnected disciplines within the broader field of data management and analysis. Data analysis focuses on extracting insights and drawing conclusions from structured data, while data science involves a more comprehensive approach that combines statistical analysis, computational methods, and machine learning to extract insights, build predictive models, and drive data-driven decision-making. Both fields play vital roles in leveraging the power of data to understand patterns, make informed decisions, and solve complex problems across various domains.
-	</p>
-		
+    <footer>
+      <span>© <span id="y"></span> ZHANG Fuhai (Mike)</span> •
+      <span>Built with ❤️ and vanilla HTML/CSS</span>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
