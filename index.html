@@ -1,191 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ZHANG Fuhai (Mike) — Resume</title>
-  <meta name="description" content="Results-driven IT Director with global leadership experience in retail. Expert in IT strategy, data & analytics, SAP, cybersecurity, and large-scale system integration." />
-  <meta name="author" content="ZHANG Fuhai (Mike)" />
+  <title>Mike Zhang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg: #0f1220;
-      --card: #151a2e;
-      --muted: #8a93b2;
-      --text: #e6e9f5;
-      --accent: #6ea8fe;
-      --accent-2: #9bffd6;
-      --chip: #222846;
-      --border: #2a3158;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius: 16px;
-      --maxw: 1100px;
+    :root {
+      --maxw: 920px;
+      --accent: #b13a2a; /* warm red for links like the template */
+      --ink: #222;
+      --muted: #666;
+      --bg: #f7f5f2;
     }
-    @media (prefers-color-scheme: light) {
-      :root{
-        --bg: #f7f8fc;
-        --card: #ffffff;
-        --muted: #5b647a;
-        --text: #0f1321;
-        --accent: #0d6efd;
-        --accent-2: #0fa;
-        --chip: #f2f5ff;
-        --border: #e6e9f5;
-      }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: white;
+      color: var(--ink);
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--bg) 0%, #0b0e19 120%);color:var(--text);}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:var(--maxw); margin: 48px auto; padding: 0 20px;}
-    header.hero{
-      display:grid; gap:22px; grid-template-columns: 1fr;
-      background:linear-gradient(135deg, rgba(110,168,254,.12), rgba(155,255,214,.12));
-      border:1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow:var(--shadow);
+    body {
+      font-family: "Crimson Text", Georgia, serif;
+      line-height: 1.6;
+      font-size: 20px;
     }
-    .name{font-size: clamp(28px, 5vw, 44px); font-weight: 800; line-height:1.05; letter-spacing:-.02em}
-    .title{font-size: clamp(14px, 2.4vw, 18px); color:var(--muted); font-weight:600}
-    .contact{display:flex; flex-wrap:wrap; gap:14px; align-items:center; color:var(--muted)}
-    .contact a{display:inline-flex; gap:8px; align-items:center; background:var(--chip); border:1px solid var(--border); padding:8px 12px; border-radius:999px; text-decoration:none}
-    .contact a:hover{transform:translateY(-1px); transition: .15s ease; text-decoration:none}
-    .grid{display:grid; gap:22px; grid-template-columns:1fr; margin-top: 26px}
-    @media(min-width: 880px){ .grid{ grid-template-columns: 2fr 1fr; } }
-    section.card{background: var(--card); border:1px solid var(--border); border-radius: var(--radius); padding: 22px; box-shadow:var(--shadow)}
-    h2{margin:0 0 10px 0; font-size: 20px; letter-spacing:.02em}
-    p{margin:0 0 10px 0; line-height:1.7}
-    .muted{color:var(--muted)}
-    ul{margin: 10px 0 0 18px}
-    li{margin:6px 0}
-    .role{display:grid; gap:6px; padding:14px; border-radius:12px; border:1px dashed var(--border); background:linear-gradient(180deg, transparent, rgba(255,255,255,.02));}
-    .role + .role{margin-top:12px}
-    .role h3{margin:0; font-size: 17px}
-    .role .meta{color:var(--muted); font-size: 14px}
-    .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px}
-    .chip{background:var(--chip); border:1px solid var(--border); padding:8px 10px; border-radius: 999px; font-size:13px; font-weight:600; color:var(--muted)}
-    footer{margin:28px 0 50px; color:var(--muted); display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:center}
-    .nav{display:flex; gap:12px; flex-wrap:wrap; margin-top: 4px}
-    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:10px; border:1px solid var(--border); background:var(--chip); text-decoration:none; font-weight:600}
-    .btn:hover{transform:translateY(-1px)}
-    /* Print styles */
-    @media print {
-      body{background:white}
-      .wrap{margin:0}
-      header.hero, section.card{box-shadow:none}
-      a{text-decoration:none}
-      .btn, .nav{display:none}
+    .wrap {
+      max-width: var(--maxw);
+      margin: 40px auto 80px;
+      padding: 0 24px;
+    }
+    header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      border-bottom: 1px solid #e6e2dc;
+      padding-bottom: 16px;
+      margin-bottom: 28px;
+    }
+    .brand {
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color: #333;
+    }
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: #444;
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      font-size: 16px;
+    }
+    nav a:hover { text-decoration: underline; }
+    h1 {
+      font-size: 52px;
+      line-height: 1.2;
+      margin: 32px 0 10px;
+      font-weight: 600;
+    }
+    p { margin: 0 0 14px; }
+    a { color: var(--accent); }
+    .lead { font-size: 23px; }
+    .section {
+      margin-top: 42px;
+    }
+    .muted { color: var(--muted); }
+    .contact-item { margin: 6px 0; }
+    footer {
+      margin-top: 64px;
+      border-top: 1px dashed #e6e2dc;
+      padding-top: 14px;
+      font-size: 16px;
+      color: var(--muted);
+    }
+    /* small screens */
+    @media (max-width: 640px) {
+      h1 { font-size: 40px; }
+      body { font-size: 18px; }
+      .wrap { margin-top: 20px; }
     }
   </style>
-
-  <!-- Structured data for better SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "ZHANG Fuhai (Mike)",
-    "jobTitle": "IT Director",
-    "telephone": "+6593629457",
-    "email": "mailto:fuhai_zhang@yahoo.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "Singapore"
-    },
-    "knowsAbout": [
-      "IT Strategy & Planning", "Data Analytics & Governance", "SAP Systems",
-      "Team Leadership", "Cybersecurity", "System Integration", "Agile Project Management"
-    ]
-  }
-  </script>
 </head>
 <body>
   <div class="wrap">
-    <header class="hero" role="banner">
-      <div>
-        <div class="name">ZHANG Fuhai (Mike)</div>
-        <div class="title">Results-driven IT Director — global fashion retail, data & platforms</div>
-        <div class="nav">
-          <a class="btn" href="#experience">Experience</a>
-          <a class="btn" href="#skills">Skills</a>
-          <a class="btn" href="#education">Education</a>
-          <a class="btn" href="#contact">Contact</a>
-        </div>
-      </div>
-      <div class="contact" id="contact" aria-label="Contact">
-        <a href="tel:+6593629457" aria-label="Phone"><span>📞</span><span>+65 9362 9457</span></a>
-        <a href="mailto:fuhai_zhang@yahoo.com" aria-label="Email"><span>✉️</span><span>fuhai_zhang@yahoo.com</span></a>
-      </div>
-      <p class="muted" style="margin:0">
-        Results-driven IT Director seeking to leverage experience directing IT infrastructure to reduce costs and data processing times.
-        Experienced in leading global teams, driving revenue growth, and aligning IT and data strategies with business objectives.
-      </p>
+    <header>
+      <div class="brand">MIKE ZHANG</div>
+      <nav>
+        <a href="#research">RESEARCH</a>
+        <a href="#misc">MISC</a>
+        <a href="#blog">BLOG</a>
+      </nav>
     </header>
 
-    <div class="grid" role="main">
-      <section id="experience" class="card" aria-labelledby="exp-h2">
-        <h2 id="exp-h2">Experience</h2>
+    <main>
+      <h1>About me</h1>
 
-        <article class="role">
-          <h3>Associate IT Director — Charles &amp; Keith Group</h3>
-          <div class="meta">Nov 2018 – Present • Singapore</div>
-          <ul>
-            <li>Led a 70-member team across global markets, aligning IT/Data with business goals.</li>
-            <li>Developed and executed IT strategy; improved system uptime by <strong>30%</strong> via governance and infra upgrades.</li>
-            <li>Spearheaded data analytics to reduce inventory discrepancies by <strong>15%</strong> and improve sales forecasting accuracy by <strong>20%</strong>.</li>
-            <li>Directed group-wide ERP, POS, CRM, RFID, PLM, and CDP rollouts.</li>
-          </ul>
-        </article>
+      <p class="lead">
+        I’m a technology and data leader focused on building <em>business‑driven</em> IT &amp; AI capabilities for global retail.
+        I currently serve as Group IT &amp; Data Director at Charles &amp; Keith Group, partnering with business leaders to deliver
+        enterprise platforms, analytics, and AI at scale.
+      </p>
 
-        <article class="role">
-          <h3>Senior Manager — NTUC FairPrice Co-operative Limited</h3>
-          <div class="meta">May 2016 – Nov 2018 • Singapore</div>
-          <ul>
-            <li>Managed migration to SAP S/4HANA, improving financial process efficiency by <strong>40%</strong>.</li>
-            <li>Integrated POS, WMS, and OMS across 200+ retail outlets.</li>
-            <li>Launched a Purchase Order mobile app for streamlined supplier transactions and order tracking.</li>
-            <li>Built cross-functional teams; delivered projects on time and within budget with a <strong>95% success rate</strong>.</li>
-          </ul>
-        </article>
+      <p>
+        My recent work spans SAP S/4HANA transformation, Salesforce Commerce Cloud, Oracle XStore POS,
+        and a modern lakehouse on Alicloud (MaxCompute/Hologres). I also lead initiatives in machine learning
+        for forecasting and LLM‑powered content generation. Previously I worked across data engineering and
+        product teams, focusing on <a href="#" title="Example link">analytics</a> and <a href="#" title="Example link">platform</a> foundations.
+      </p>
 
-        <article class="role">
-          <h3>Senior Manager / Founder — PEA IT Solutions Pte Ltd</h3>
-          <div class="meta">Jan 2006 – Apr 2016 • Singapore</div>
-          <ul>
-            <li>Founded and led an IT consultancy delivering logistics &amp; supply chain software solutions.</li>
-            <li>Designed and implemented warehouse management systems, improving client order processing by <strong>50%</strong>.</li>
-            <li>Delivered major projects for CEVA Logistics, Ryder Ascent Logistics, PCH International, and the German Distribution Centre.</li>
-            <li>Built inventory management systems for clients including Novartis, Lazada, and Shopify, enabling real-time tracking and scaling.</li>
-            <li>Partnered with 20+ clients to deliver customized IT solutions on time and within budget.</li>
-          </ul>
-        </article>
-      </section>
+      <p>
+        Here is my <a href="cv.pdf">CV</a>.
+      </p>
 
-      <aside class="card" id="skills" aria-labelledby="skills-h2">
-        <h2 id="skills-h2">Key Skills</h2>
-        <div class="chips" aria-label="Skills list">
-          <span class="chip">IT Strategy &amp; Planning</span>
-          <span class="chip">Data Analytics &amp; Governance</span>
-          <span class="chip">SAP Systems</span>
-          <span class="chip">Team Leadership</span>
-          <span class="chip">Cybersecurity</span>
-          <span class="chip">System Integration</span>
-          <span class="chip">Agile Project Management</span>
-        </div>
-      </aside>
+      <div class="section" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-item">GitHub: <a href="https://github.com/your-github" target="_blank">github.com/your-github</a></div>
+        <div class="contact-item">Email: <a href="mailto:mike@example.com">mike@example.com</a></div>
+      </div>
 
-      <section class="card" id="education" aria-labelledby="edu-h2" style="grid-column:1/-1">
-        <h2 id="edu-h2">Education</h2>
-        <ul>
-          <li><strong>Master of Science in Computer Science</strong> — National Technological University</li>
-          <li><strong>Bachelor of Computing in Computer Science</strong> — National University of Singapore</li>
-        </ul>
-      </section>
-    </div>
+      <div class="section" id="research">
+        <h2>Research</h2>
+        <p class="muted">Optional section. Briefly list topics, selected papers, or interests.</p>
+      </div>
+
+      <div class="section" id="misc">
+        <h2>Misc</h2>
+        <p class="muted">Optional section. Add talks, side projects, or awards.</p>
+      </div>
+
+      <div class="section" id="blog">
+        <h2>Blog</h2>
+        <p class="muted">Optional section. Link to posts or an external blog.</p>
+      </div>
+    </main>
 
     <footer>
-      <span>© <span id="y"></span> ZHANG Fuhai (Mike)</span> •
-      <span>Built with ❤️ and vanilla HTML/CSS</span>
+      <span>© <span id="year"></span> Mike Zhang • Built with a lightweight vanilla HTML/CSS template</span>
     </footer>
   </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
